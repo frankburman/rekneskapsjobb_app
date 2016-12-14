@@ -11,6 +11,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+gem 'bootstrap', '~> 4.0.0.alpha5'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
@@ -23,3 +25,7 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
